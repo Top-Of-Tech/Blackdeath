@@ -3,16 +3,9 @@ from termcolor import colored
 import requests
 import sys
 from fake_useragent import UserAgent
-import multiprocessing
-
+from lib.threads import start_processes
 
 init()
-
-print(colored(r""" ____  _            _    ____             _   _
-| __ )| | __ _  ___| | _|  _ \  ___  __ _| |_| |__
-|  _ \| |/ _` |/ __| |/ / | | |/ _ \/ _` | __| '_ \
-| |_) | | (_| | (__|   <| |_| |  __/ (_| | |_| | | |
-|____/|_|\__,_|\___|_|\_\____/ \___|\__,_|\__|_| |_|""", "green"))
 
 def DoS_attack(site, packets):
     print(colored("\n[INFO] Starting the DoS attack", "green"))
@@ -38,9 +31,9 @@ def main():
                 print(colored("How many packets to send: ", "green"), end="")
                 packets = int(input())
                 
-                DoS_attack(site, packets)
+                start_processes(site, packets)
 
-                print(colored("[INFO] Attack complete", "green"))
+                print(colored("\n[INFO] Attack complete", "green"))
             elif choice == "v":
                 print(colored("\nBlackDeath v1.0", "green"))
             elif choice == "q":
@@ -51,4 +44,11 @@ def main():
     except KeyboardInterrupt:
         sys.exit()
 
-main()
+if __name__ == "__main__":
+    print(colored(r""" 
+     ____  _            _    ____             _   _
+    | __ )| | __ _  ___| | _|  _ \  ___  __ _| |_| |__
+    |  _ \| |/ _` |/ __| |/ / | | |/ _ \/ _` | __| '_ \
+    | |_) | | (_| | (__|   <| |_| |  __/ (_| | |_| | | |
+    |____/|_|\__,_|\___|_|\_\____/ \___|\__,_|\__|_| |_|""", "green"))
+    main()
