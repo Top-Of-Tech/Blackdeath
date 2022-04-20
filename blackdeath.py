@@ -3,7 +3,7 @@ from termcolor import colored
 import requests
 import sys
 from fake_useragent import UserAgent
-from lib.threads import start_processes
+from src.threads import start_processes
 
 init()
 
