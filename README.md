@@ -44,7 +44,7 @@ python -m pip install -r requirements.txt
 
 An example of the command would be:
 
-```py
+```sh
 python3 blackdeath.py -s <site> -p <packets>
 ```
 
