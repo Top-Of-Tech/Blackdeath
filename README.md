@@ -11,7 +11,7 @@
 <ol>
   <li align="center"><a align="center" href="#about-blackdeath">About</a></li>
   <li align="center"><a align="center" href="#installation-and-usage">Installation and Usage</a></li>
-  <li align="center"><a align="center" href="#contribute-and-contact">Contribute and Contact</a></li>
+  <li align="center"><a align="center" href="#contribute">Contribute</a></li>
 </ol>
 
 <h2>About Blackdeath</h2>
@@ -20,7 +20,7 @@ Blackdeath is a lightweight python DOS tool designed for speed, efficiency, and 
 
 <h2>Installation and Usage</h2>
 
-Here is how you can start using Autharian!
+Here is how you can start using Blackdeath.
 
 <h3>Prerequisites</h3>
 
@@ -50,5 +50,5 @@ python3 blackdeath.py -s <site> -p <packets>
 
 <h2>Contribute</h2>
 
-Please feel free to contribute! Just fork and create pull requests for us to review! All contributions will be greatly appreciated!
+Please feel free to contribute. Just fork and create pull requests for me to review. All contributions will be greatly appreciated.
 
